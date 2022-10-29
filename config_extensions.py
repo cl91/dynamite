@@ -111,6 +111,7 @@ def configure_paths():
 
     PETSC_DIR  = environ['PETSC_DIR']
     PETSC_ARCH = environ['PETSC_ARCH']
+    OPENMPI_DIR = environ['OPENMPI_DIR']
     SLEPC_DIR  = environ['SLEPC_DIR']
 
     includes = []
@@ -121,7 +122,8 @@ def configure_paths():
     libs += [join(PETSC_DIR, PETSC_ARCH, 'lib')]
 
     includes += [join(SLEPC_DIR, PETSC_ARCH, 'include'),
-                 join(SLEPC_DIR, 'include')]
+                 join(SLEPC_DIR, 'include'),
+                 join(OPENMPI_DIR, 'include')]
     libs += [join(SLEPC_DIR, PETSC_ARCH, 'lib')]
 
     # python package includes

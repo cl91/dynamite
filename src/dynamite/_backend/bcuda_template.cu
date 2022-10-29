@@ -7,7 +7,8 @@ PetscErrorCode C(BuildGPUShell,C(LEFT_SUBSPACE,RIGHT_SUBSPACE))(
   const C(data,RIGHT_SUBSPACE)* right_subspace_data,
   Mat *A)
 {
-  PetscInt M, N, mpi_size;
+  PetscInt M, N;
+  int mpi_size;
   shell_context *ctx;
 
   PetscCallMPI(MPI_Comm_size(PETSC_COMM_WORLD, &mpi_size));
