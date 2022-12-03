@@ -35,7 +35,7 @@ configure_option_dict = {
     # may need/want to adjust to match your hardware's compute capability,
     # e.g. '80' for compute capability 8.0
     # can also adjust with DNM_CUDA_ARCH environment variable (see below)
-    '--with-cuda-arch': '70',
+    '--with-cuda-arch': '80',
 
     #'--download-scalapack': None,
     #'--download-mumps': None,
@@ -45,7 +45,7 @@ configure_option_dict = {
 
     # uncomment if you don't have an MPI implementation already installed
     #'--download-openmpi': None,
-   '--with-mpi-dir': '/lustre/opt/cascadelake/linux-centos7-cascadelake/gcc-9.3.0/openmpi-4.1.1-tofo6uuqy57ju4makxliq5frdjvjijyj',
+    '--with-mpi-dir': '/dssg/opt/icelake/linux-centos8-icelake/gcc-11.2.0/openmpi-4.1.1-pqinxfhmx3vgy4yek6qmsg3nda6obnjr',
     '--download-fblaslapack' : '1',
 }
 
